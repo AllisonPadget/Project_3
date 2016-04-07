@@ -1,0 +1,78 @@
+/**********************************
+		|  ** ** ** ** ** ** ** **
+		|         * * *
+		|    MEDIA QUERY 760px
+		|         * * *
+	 \ /  ** ** ** ** ** ** ** **
+		\/
+*************************************/
+
+@media  screen and (min-width: 760px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/**********************************
+		|  ** ** ** ** ** ** ** **
+		|         * * *
+		|    MEDIA QUERY 1024px
+		|         * * *
+	 \ /  ** ** ** ** ** ** ** **
+		\/
+*************************************/
+
+@media  screen and (min-width: 1024px) {
+
+
+.container {
+	width: 75%;
+	margin: 0 auto;
+	background-color: lightgrey; 
+	margin-top: 70px;
+}
+
+
+.contact {
+	padding-top: 25px;
+}
+
+.contact legend {
+	font-size: 1.2em;
+}
+
+.contact label {
+	display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+	background: #eff0f1;
+	border: none;
+	width: 80%;
+	height: 23px;
+	border-radius: 4px;
+	padding: 15px;
+	color: #C3C7CA;
+}
+
+
+
+
+}
