@@ -71,7 +71,8 @@ margin: 4px 6px;
 
 .contact {
 	margin-top: 25px;
-	margin-right: 10px;
+	margin-right: 20px;
+	margin-left: 5px;
 }
 
 
@@ -99,6 +100,14 @@ margin: 4px 6px;
 #city {
 	text-align: left;
 	color: #2D3945;
+	padding-left: 25px;
+	font-size: 1em;
+}
+
+#zipcode {
+	max-width: 25%;
+	margin-bottom: 25px;
+	padding-left: 15px;
 }
 
 /*** placeholders ***/
@@ -109,7 +118,8 @@ input::-webkit-input-placeholder {
 color: #C3C7CA;
 text-align: right;
 font-style: italic;
-font-size: 1.1em;
+/*font-size: 1.1em;*/
+padding-right: 10px;
 }
  
 input:-moz-placeholder {  /*Firefox 18- */
@@ -134,9 +144,10 @@ select {
 	background: #eff0f1;
 	border: none;
 	width: 95%;
-	height: 23px;
+	/*height: 23px;*/
+	height: 60px;
 	border-radius: 4px;
-	padding: 15px;
+	padding-right: 15px;
 	color: #C3C7CA;
 }
 
@@ -149,18 +160,9 @@ textarea:focus {
 	transition: background 0.6s;
 }
 
-/*input:hover,
-select:hover,
-textarea:hover {
-	outline: 0;
-	border: 2px solid #b5c3d0;
-	background: #f8f9f9;
-	transition: background 0.6s;
-}*/
-
 
 #state {
-	height: 43px;
+	height: 60px;
 }
 
 /**************************************************************/
@@ -181,10 +183,7 @@ textarea:hover {
 /**************************************************************/
 
 
-#zipcode {
-	max-width: 30%;
-	margin-bottom: 25px;
-}
+
 
 /*** NEWSLETTER FORM ***/
 
@@ -222,6 +221,35 @@ input[type="radio"] {
 }
 
 
+/* space between checkbox&radio and text */
+.checkbox,
+.radio {
+	width: 20px;
+	font-size: 0.9em;
+}
+
+.space {
+	margin-bottom: 10px;
+}
+
+.newsletter label {
+	font-size: 0.9em;
+}
+
+
+h3 {
+	font-size: 0.9em;
+}
+
+h4 {
+	margin: 0 auto;
+	padding: 23px 0;
+	font-size: 0.9em;
+}
+
+
+
+
 h4 {
 	margin-top: 20px;
 	font-weight: 300;
@@ -236,7 +264,6 @@ textarea {
 	min-width: 89%;
 	border-radius: 3px;
 	padding: 15px;
-	margin-left: 10px;
 	margin-left: 10px;
 	margin-bottom: 25px;
 }

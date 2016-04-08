@@ -11,7 +11,18 @@
 
 
 
+.container {
+	/*width: 75%;*/
+	max-width: 650px;
+	margin: 0 auto;
+	/*background-color: lightgrey; */
+	margin-top: 70px;
+}
 
+.contact {
+	padding-top: 25px;
+
+}
 
 
 
@@ -40,24 +51,60 @@
 
 
 .container {
-	width: 75%;
+	/*width: 75%;*/
+	max-width: 900px;
+
 	margin: 0 auto;
-	background-color: lightgrey; 
+	/*background-color: lightgrey; */
 	margin-top: 70px;
 }
 
-
 .contact {
 	padding-top: 25px;
+
 }
 
-.contact legend {
-	font-size: 1.2em;
+
+
+/******** WITH FLEXBOX *********/
+
+
+
+.flexible {
+	display: flex;
+	justify-content: space-between;
+    align-content: center;
+    flex-grow: 2;
+    margin-top: 20px;
 }
 
-.contact label {
-	display: inline;
+.flexible label {
+    width: 150px;
+    /*flex-grow: 1;*/
 }
+
+
+.flexible {
+	margin-bottom: 15px;
+}
+
+
+input,
+select {
+	margin-left: 100px;
+}
+
+
+
+#state {
+	margin-right: 40px;
+}
+
+#zipcode {
+	margin-right: 366px;
+}
+
+/******** GREY BOXES  *********/
 
 input[type="text"],
 input[type="email"],
@@ -65,14 +112,74 @@ input[type="tel"],
 select {
 	background: #eff0f1;
 	border: none;
-	width: 80%;
-	height: 23px;
+	width: 70%;
+	/*height: 23px;*/
+	height: 60px;
 	border-radius: 4px;
-	padding: 15px;
+	padding-right: 15px;
 	color: #C3C7CA;
 }
 
+.newsletter {
+	margin-top: 25px;
+}
+
+h3, 
+input[type="checkbox"],
+input[type="radio"],
+textarea {
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+
+/******** WITHOUT FLEXBOX *********/
+
+/*.contact label {
+	display: inline-block;
+    width: 30%;
+    float: left;
+}
+
+.contact input, select {
+	display: inline-block;
+    width: 60%;
+    float: right;
+}*/
+
+
+
+
+
+.contact legend,
+.newsletter legend {
+	font-size: 1.2em;
+}
+
+
+
+
+
+/**********/
+
+textarea {
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+
+button {
+	margin-left: 5px;
+	margin-bottom: 10px;
+	padding:  20px 0;
+}
+
 
 
 
 }
+
+
+
+
+
