@@ -4,7 +4,11 @@ body {
   margin: 0 auto;
   /*font-family: "Roboto Slab", sans-serif;*/
   font-family: "Merriweather", sans-serif;
+  background: #f2f2f3;
+}
 
+* {
+	box-sizing: border-box;
 }
 
 .container {
@@ -12,6 +16,8 @@ body {
 }
 
 /*** HEADER ***/
+
+
 
 .header h1 {
 	text-transform: uppercase;
@@ -43,6 +49,7 @@ body {
 }
 
 
+
 /*** GENERAL FORM AREA ***/
 
  fieldset {
@@ -71,7 +78,7 @@ margin: 4px 6px;
 
 .contact {
 	margin-top: 25px;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 	margin-left: 5px;
 }
 
@@ -85,10 +92,10 @@ margin: 4px 6px;
 
 .contact label {
 	display: block;
-	margin-top: 12px;
+	margin-top: 20px;
 	margin-bottom: -5px;
 	color: #55687A;
-
+	padding-top: 20px;
 }
 
 /** when user types **/
@@ -105,9 +112,12 @@ margin: 4px 6px;
 }
 
 #zipcode {
-	max-width: 25%;
+	max-width: 50%;
 	margin-bottom: 25px;
-	padding-left: 15px;
+	padding-left: 25px;
+	text-align: left;
+	font-size: 1em;
+	color: #2D3945;
 }
 
 /*** placeholders ***/
@@ -134,22 +144,45 @@ input:-ms-input-placeholder {
 color: #C3C7CA;  
 }
 
+/** *************** **/
+
+
+
 
 /** GREY DATA BOXES **/
 
 input[type="text"],
 input[type="email"],
-input[type="tel"],
-select {
-	background: #eff0f1;
+input[type="tel"] 
+{
+	background: #e4e4e7;
 	border: none;
-	width: 95%;
-	/*height: 23px;*/
 	height: 60px;
 	border-radius: 4px;
 	padding-right: 15px;
 	color: #C3C7CA;
+
+	display: block;
+	width: 100%;
 }
+
+select {
+	background: #e4e4e7;
+	border: none;
+	height: 60px;
+	border-radius: 4px;
+	color: #C3C7CA;
+
+	display: block;
+	width: 100%;
+}
+
+#state {
+	height: 60px;
+	font-size: 1em;
+}
+
+
 
 input:focus,
 select:focus,
@@ -161,9 +194,7 @@ textarea:focus {
 }
 
 
-#state {
-	height: 60px;
-}
+
 
 /**************************************************************/
 				/* when STATE option has been chosen */
@@ -220,6 +251,40 @@ input[type="radio"] {
 	color: #55687A;
 }
 
+/***************** Fancy CHECKBOXES AND RADIO BUTTONS *****************/
+
+
+/* Hiding the default radiobuttons & checkboxes */
+input[type="radio"], 
+input[type="checkbox"] {
+    display: none;
+}
+/* Hiding the "check" status of inputs */
+input[type="radio"] + label .fa-circle,
+input[type="checkbox"] + label .fa-check  {
+	display: none;
+}
+/* Styling the "check" status */
+input[type="radio"]:checked + label .fa-circle,
+input[type="checkbox"]:checked + label .fa-check {
+	display: block;
+	color: #999695;
+}
+/* Styling checkboxes */
+input[type="checkbox"]:checked + label .fa-check {
+	position: relative;
+	left: .125em;
+	bottom: .125em;
+}
+/* Styling radiobuttons */
+input[type="radio"]:checked + label .fa-circle-o {
+	display: none;
+}
+
+
+
+
+
 
 /* space between checkbox&radio and text */
 .checkbox,
@@ -247,24 +312,19 @@ h4 {
 	font-size: 0.9em;
 }
 
-
-
-
 h4 {
 	margin-top: 20px;
 	font-weight: 300;
-	margin-left: 10px;
 	color: #55687A;
 }
 
 textarea {
-	background: #eff0f1;
+	background: #e4e4e7;
 	border: none;
 	height: 60px;
-	min-width: 89%;
+	width: 100%;
 	border-radius: 3px;
 	padding: 15px;
-	margin-left: 10px;
 	margin-bottom: 25px;
 }
 
@@ -272,7 +332,7 @@ textarea {
 
 
 button {
-	background-color: #4EBBB5;
+	background-color: #3fa6a0;
 	color: white;
 	font-size: 1.5em;
 	border: none;
@@ -281,6 +341,11 @@ button {
 	padding: 28px 0px;
 	min-width: 100%;
 	cursor: pointer;
+}
+
+button:hover {
+	background-color: #6bc7c2;
+	box-shadow: 5px 5px 10px #888;
 }
 
 /*** FOOTER **/
@@ -292,6 +357,7 @@ button {
 	margin-bottom: 35px;
 	font-style: italic;
 }
+
 
 
 

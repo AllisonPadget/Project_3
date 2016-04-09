@@ -1,3 +1,4 @@
+
 /**********************************
 		|  ** ** ** ** ** ** ** **
 		|         * * *
@@ -11,24 +12,27 @@
 
 
 
-.container {
-	/*width: 75%;*/
-	max-width: 650px;
-	margin: 0 auto;
-	/*background-color: lightgrey; */
-	margin-top: 70px;
-}
+	.container {
+		max-width: 650px;
+		margin: 0 auto;
+		/*background-color: lightgrey; */
+		margin-top: 70px;
+	}
 
-.contact {
-	padding-top: 25px;
+	.contact {
+		padding-top: 25px;
 
-}
+	}
+
+	#zipcode{
+		max-width: 25%;
+	}
 
 
 
-
-
-
+	textarea {
+		width: 100%;
+	}
 
 
 
@@ -50,132 +54,132 @@
 @media  screen and (min-width: 1024px) {
 
 
-.container {
-	/*width: 75%;*/
-	max-width: 900px;
+	.container {
+		max-width: 900px;
+		margin: 0 auto;
+		margin-top: 70px;
+	}
 
-	margin: 0 auto;
-	/*background-color: lightgrey; */
-	margin-top: 70px;
-}
+	.contact {
+		padding-top: 25px;
 
-.contact {
-	padding-top: 25px;
+	}
 
-}
-
-
-
-/******** WITH FLEXBOX *********/
+	.contact label {
+		float: left;
+		width: 25%;
+	}
 
 
-
-.flexible {
-	display: flex;
-	justify-content: space-between;
-    align-content: center;
-    flex-grow: 2;
-    margin-top: 20px;
-}
-
-.flexible label {
-    width: 150px;
-    /*flex-grow: 1;*/
-}
-
-
-.flexible {
-	margin-bottom: 15px;
-}
-
-
-input,
-select {
-	margin-left: 100px;
-}
+	/******** WITH FLEXBOX *********/
 
 
 
-#state {
-	margin-right: 40px;
-}
+	/*.flexible {
+		display: flex;
+		justify-content: flex-start;
+	    align-content: flex-start;
+	    margin-top: 20px;
+		margin-bottom: 15px;
+	}
 
-#zipcode {
-	margin-right: 366px;
-}
-
-/******** GREY BOXES  *********/
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select {
-	background: #eff0f1;
-	border: none;
-	width: 70%;
-	/*height: 23px;*/
-	height: 60px;
-	border-radius: 4px;
-	padding-right: 15px;
-	color: #C3C7CA;
-}
-
-.newsletter {
-	margin-top: 25px;
-}
-
-h3, 
-input[type="checkbox"],
-input[type="radio"],
-textarea {
-	margin: 0 auto;
-	padding: 15px 0;
-}
+	.flexible label {
+	    width: 150px;
+	    flex-grow: 1;
+	}
 
 
-/******** WITHOUT FLEXBOX *********/
+	.flexible input {
+		flex-grow: 3;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-self: flex-start;
+	}*/
 
-/*.contact label {
-	display: inline-block;
-    width: 30%;
-    float: left;
-}
+	/*
+	input {
+		margin-left: 100px;
+	}
 
-.contact input, select {
-	display: inline-block;
-    width: 60%;
-    float: right;
-}*/
+
+	#zipcode {
+		margin-right: 366px;
+		max-width: 200px;
+	}*/
 
 
 
 
 
-.contact legend,
-.newsletter legend {
-	font-size: 1.2em;
-}
+	/******** GREY BOXES  *********/
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"]
+	{
+		height: 60px;
+		padding-right: 15px;
+		float: left;
+		width: 75%;
+	}
+
+	select {
+		float: left;
+		width: 75%;
+	}
+
+	#zipcode{
+		max-width: 25%;
+	}
+
+	/******** *********/
+
+	.newsletter {
+		margin-top: 25px;
+	}
+
+	h3, 
+	input[type="checkbox"],
+	input[type="radio"],
+	textarea {
+		margin: 0 auto;
+		padding: 15px 0;
+	}
 
 
 
 
-
-/**********/
-
-textarea {
-	width: 100%;
-	margin-bottom: 25px;
-}
-
-
-button {
-	margin-left: 5px;
-	margin-bottom: 10px;
-	padding:  20px 0;
-}
+	.contact legend,
+	.newsletter legend {
+		font-size: 1.2em;
+	}
 
 
 
+	h4 {
+		margin-left: 0;
+	}
+
+
+
+	textarea {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+
+	button {
+		margin-bottom: 10px;
+		padding:  20px 0;
+
+	}
+
+
+	.clearfix:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
 
 }
 
