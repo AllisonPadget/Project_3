@@ -15,8 +15,11 @@
 	.container {
 		max-width: 650px;
 		margin: 0 auto;
-		/*background-color: lightgrey; */
 		margin-top: 70px;
+	}
+
+	.container h2 {
+		margin-top: 30px;
 	}
 
 	.contact {
@@ -24,10 +27,25 @@
 
 	}
 
-	#zipcode{
-		max-width: 25%;
+
+	.col-sm {
+		float: left;
+		width: 100%;
 	}
 
+	.col-lrg {
+		float: left;
+		width: 100%;
+	}
+
+
+	/* centers text in middle of box using Flexbox */
+
+	.center {					
+		display: flex;
+		align-self: center;
+		margin-bottom: 20px;
+	}
 
 
 	textarea {
@@ -35,8 +53,11 @@
 	}
 
 
-
-
+	.clearfix:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
 
 }
 
@@ -55,60 +76,14 @@
 
 
 	.container {
-		max-width: 900px;
+		max-width: 975px;
 		margin: 0 auto;
 		margin-top: 70px;
 	}
 
 	.contact {
 		padding-top: 25px;
-
 	}
-
-	.contact label {
-		float: left;
-		width: 25%;
-	}
-
-
-	/******** WITH FLEXBOX *********/
-
-
-
-	/*.flexible {
-		display: flex;
-		justify-content: flex-start;
-	    align-content: flex-start;
-	    margin-top: 20px;
-		margin-bottom: 15px;
-	}
-
-	.flexible label {
-	    width: 150px;
-	    flex-grow: 1;
-	}
-
-
-	.flexible input {
-		flex-grow: 3;
-		justify-content: flex-start;
-		align-content: flex-start;
-		align-self: flex-start;
-	}*/
-
-	/*
-	input {
-		margin-left: 100px;
-	}
-
-
-	#zipcode {
-		margin-right: 366px;
-		max-width: 200px;
-	}*/
-
-
-
 
 
 	/******** GREY BOXES  *********/
@@ -119,21 +94,33 @@
 	{
 		height: 60px;
 		padding-right: 15px;
+	}
+
+	#zipcode {
+		max-width: 35%;
+	}
+
+	
+	.col-sm {
+		float: left;
+		width: 38%;
+	}
+
+	.col-lrg {
 		float: left;
 		width: 75%;
 	}
 
-	select {
-		float: left;
-		width: 75%;
+	/* centers text in middle of box using Flexbox */
+
+	.center {					
+		display: flex;
+		align-self: center;
+		margin-bottom: 20px;
 	}
 
-	#zipcode{
-		max-width: 25%;
-	}
 
 	/******** *********/
-
 	.newsletter {
 		margin-top: 25px;
 	}
@@ -147,33 +134,26 @@
 	}
 
 
-
-
 	.contact legend,
 	.newsletter legend {
 		font-size: 1.2em;
 	}
 
-
-
 	h4 {
 		margin-left: 0;
 	}
 
-
-
 	textarea {
 		width: 100%;
 		margin-bottom: 25px;
+		height: 150px;
 	}
-
 
 	button {
 		margin-bottom: 10px;
 		padding:  20px 0;
 
 	}
-
 
 	.clearfix:after {
 	  content: "";

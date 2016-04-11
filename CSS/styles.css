@@ -2,8 +2,8 @@
 
 body {
   margin: 0 auto;
-  /*font-family: "Roboto Slab", sans-serif;*/
-  font-family: "Merriweather", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
+  /*font-family: "Merriweather", sans-serif;*/  /* mockup font */
   background: #f2f2f3;
 }
 
@@ -24,7 +24,7 @@ body {
 	text-align: center;
 	font-size: 1.3em;
 	color: white;
-	background: #2D3945;
+	background: #4d5966;
 	padding: 30px;
 	margin: 0;
 }
@@ -61,16 +61,16 @@ body {
 /*** HORIZONTAL RULES ***/
 
 .thick-hr {
-border-width: 2px;
-border-color: #2D3945;
-margin: 4px 6px;
+	border-width: 2px;
+	border-color: #676F78;
+	margin: 4px 6px;
 
 }
 
 .thin-hr {
-border-width: 1px;
-border-color: #2D3945;
-margin: 4px 6px;
+	border-width: 1px;
+	border-color: #676F78;
+	margin: 4px 6px;
 }
 
 
@@ -78,7 +78,6 @@ margin: 4px 6px;
 
 .contact {
 	margin-top: 25px;
-	/*margin-right: 20px;*/
 	margin-left: 5px;
 }
 
@@ -93,60 +92,9 @@ margin: 4px 6px;
 .contact label {
 	display: block;
 	margin-top: 20px;
-	margin-bottom: -5px;
 	color: #55687A;
-	padding-top: 20px;
+	padding-bottom: 10px;
 }
-
-/** when user types **/
-
-#name,
-#email,
-#phone,
-#address,
-#city {
-	text-align: left;
-	color: #2D3945;
-	padding-left: 25px;
-	font-size: 1em;
-}
-
-#zipcode {
-	max-width: 50%;
-	margin-bottom: 25px;
-	padding-left: 25px;
-	text-align: left;
-	font-size: 1em;
-	color: #2D3945;
-}
-
-/*** placeholders ***/
-
-
-
-input::-webkit-input-placeholder {
-color: #C3C7CA;
-text-align: right;
-font-style: italic;
-/*font-size: 1.1em;*/
-padding-right: 10px;
-}
- 
-input:-moz-placeholder {  /*Firefox 18- */
-color: #C3C7CA;  
-}
- 
-input::-moz-placeholder {   /*Firefox 19+ */
-color: #C3C7CA;  
-}
- 
-input:-ms-input-placeholder {  
-color: #C3C7CA;  
-}
-
-/** *************** **/
-
-
 
 
 /** GREY DATA BOXES **/
@@ -159,7 +107,6 @@ input[type="tel"]
 	border: none;
 	height: 60px;
 	border-radius: 4px;
-	padding-right: 15px;
 	color: #C3C7CA;
 
 	display: block;
@@ -177,11 +124,18 @@ select {
 	width: 100%;
 }
 
+
 #state {
+	padding-left: 20px;
 	height: 60px;
 	font-size: 1em;
 }
 
+select#language {
+	margin-bottom: 25px;
+}
+
+/*** ***/
 
 
 input:focus,
@@ -196,22 +150,57 @@ textarea:focus {
 
 
 
-/**************************************************************/
-				/* when STATE option has been chosen */
 
- {
-	color: black;
+/** when user types **/
+
+#name,
+#email,
+#phone,
+#address,
+#city {
+	text-align: left;
+	color: #C3C7CA;
+	padding-left: 25px;
+	font-size: 1em;
+}
+
+#zipcode {
+	max-width: 180px;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 1em;
+	color: #C3C7CA;
+}
+
+#language {
+	padding-left: 20px;
 }
 
 
 
+/*** placeholders ***/
 
 
 
-
-
-
-/**************************************************************/
+input::-webkit-input-placeholder {
+	color: #C3C7CA;
+	text-align: right;
+	font-style: italic;
+	/*font-size: 1.1em;*/
+	padding-right: 10px;
+}
+ 
+input:-moz-placeholder {  /*Firefox 18- */
+	color: #C3C7CA;  
+}
+ 
+input::-moz-placeholder {   /*Firefox 19+ */
+	color: #C3C7CA;  
+}
+ 
+input:-ms-input-placeholder {  
+	color: #C3C7CA;  
+}
 
 
 
@@ -222,6 +211,7 @@ textarea:focus {
 .newsletter legend {
 	padding-top: 20px;
 	padding-bottom: 5px;
+	padding-left: 8px;
 	font-size: 1.5em;
 	font-weight: 700;
 }
@@ -249,6 +239,39 @@ input[type="radio"] {
 
 .newsletter label {
 	color: #55687A;
+}
+
+
+
+.newsletter label {
+	font-size: 0.9em;
+}
+
+
+h3 {
+	font-size: 1em;
+}
+
+h4 {
+	margin: 0 auto;
+	padding: 23px 0;
+	font-size: 1em;
+}
+
+h4 {
+	margin-top: 20px;
+	font-weight: 300;
+	color: #55687A;
+}
+
+textarea {
+	background: #e4e4e7;
+	border: none;
+	height: 100px;
+	width: 100%;
+	border-radius: 3px;
+	padding: 15px;
+	margin-bottom: 25px;
 }
 
 /***************** Fancy CHECKBOXES AND RADIO BUTTONS *****************/
@@ -282,10 +305,6 @@ input[type="radio"]:checked + label .fa-circle-o {
 }
 
 
-
-
-
-
 /* space between checkbox&radio and text */
 .checkbox,
 .radio {
@@ -297,42 +316,72 @@ input[type="radio"]:checked + label .fa-circle-o {
 	margin-bottom: 10px;
 }
 
-.newsletter label {
-	font-size: 0.9em;
+/********* down arrow on select box ***********/
+			/*** choose state select ***/
+
+.select-wrap {
+    overflow: hidden; 
+    position: relative;
+    display: block;
+    width: 100%;
 }
 
-
-h3 {
-	font-size: 0.9em;
+.select-wrap select{       
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;       
+   -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-h4 {
-	margin: 0 auto;
-	padding: 23px 0;
-	font-size: 0.9em;
+.select-wrap:after {
+    content:"\f107";
+    font-family: FontAwesome;
+    font-size: 25px;
+    color: #2D3945;
+    padding: 21px 10px;
+    position: absolute; right: 0; top: 0;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;      
 }
 
-h4 {
-	margin-top: 20px;
-	font-weight: 300;
-	color: #55687A;
+/********* preferred language select *********/
+
+.select-wrap2 {
+    overflow: hidden; 
+    position: relative;
+    display: block;
+    width: 100%;
 }
 
-textarea {
-	background: #e4e4e7;
-	border: none;
-	height: 60px;
-	width: 100%;
-	border-radius: 3px;
-	padding: 15px;
-	margin-bottom: 25px;
+.select-wrap2 select{       
+    height: 60px;
+    padding: 5px;
+    font-size: 16px;       
+   -webkit-appearance: none;
+    -moz-appearance: none;
 }
+.select-wrap2:after {
+    content:"\f107";
+    font-family: FontAwesome;
+    font-size: 25px;
+    color: #2D3945;
+    padding: 20px 10px;
+    position: absolute; right: 0; top: 0;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;      
+}
+
 
 /*** BUTTON ***/
 
 
 button {
-	background-color: #3fa6a0;
+	background-color: #69b069;
 	color: white;
 	font-size: 1.5em;
 	border: none;
@@ -344,9 +393,12 @@ button {
 }
 
 button:hover {
-	background-color: #6bc7c2;
+	background-color: #A5CFA5;
+	color: #424C57;
 	box-shadow: 5px 5px 10px #888;
 }
+
+
 
 /*** FOOTER **/
 
