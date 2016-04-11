@@ -30,7 +30,7 @@ body {
 	text-align: center;
 	font-size: 1.3em;
 	color: white;
-	background: #4d5966;
+	background: #00330d;
 	padding: 30px;
 	margin: 0;
 }
@@ -370,7 +370,7 @@ button {
 
 button:hover {
 	background-color: #A5CFA5;
-	color: #424C57;
+	color: #00330d;
 	box-shadow: 5px 5px 10px #888;
 }
 
