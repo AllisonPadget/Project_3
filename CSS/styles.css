@@ -1,14 +1,20 @@
  /*Global Layout Set-up */
 
 body {
-  margin: 0 auto;
-  font-family: "Roboto Slab", sans-serif;
-  /*font-family: "Merriweather", sans-serif;*/  /* mockup font */
-  background: #f2f2f3;
+	margin: 0 auto;
+	font-family: "Roboto Slab", sans-serif;
+	/*font-family: "Merriweather", sans-serif;*/  /* mockup font */
+	background: #f2f2f3;
 }
 
 * {
 	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .container {
@@ -52,9 +58,9 @@ body {
 
 /*** GENERAL FORM AREA ***/
 
- fieldset {
-    border: none;
-    padding: 0px 12px 0 5px;
+fieldset {
+	border: none;
+	padding: 0px 12px 0 5px;
 }
 
 
@@ -254,12 +260,9 @@ h3 {
 
 h4 {
 	margin: 0 auto;
+	margin-top: 20px;
 	padding: 23px 0;
 	font-size: 1em;
-}
-
-h4 {
-	margin-top: 20px;
 	font-weight: 300;
 	color: #55687A;
 }
@@ -280,7 +283,7 @@ textarea {
 /* Hiding the default radiobuttons & checkboxes */
 input[type="radio"], 
 input[type="checkbox"] {
-    display: none;
+	display: none;
 }
 /* Hiding the "check" status of inputs */
 input[type="radio"] + label .fa-circle,
@@ -320,60 +323,33 @@ input[type="radio"]:checked + label .fa-circle-o {
 			/*** choose state select ***/
 
 .select-wrap {
-    overflow: hidden; 
-    position: relative;
-    display: block;
-    width: 100%;
+	overflow: hidden; 
+	position: relative;
+	display: block;
+	width: 100%;
 }
 
-.select-wrap select{       
-    height: 40px;
-    padding: 5px;
-    font-size: 16px;       
-   -webkit-appearance: none;
-    -moz-appearance: none;
+.select-wrap select {       
+	height: 60px;
+	padding: 5px;
+	font-size: 16px;       
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 
 .select-wrap:after {
-    content:"\f107";
-    font-family: FontAwesome;
-    font-size: 25px;
-    color: #2D3945;
-    padding: 21px 10px;
-    position: absolute; right: 0; top: 0;
-    z-index: 1;
-    text-align: center;
-    width: 10%;
-    height: 100%;      
-}
-
-/********* preferred language select *********/
-
-.select-wrap2 {
-    overflow: hidden; 
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-.select-wrap2 select{       
-    height: 60px;
-    padding: 5px;
-    font-size: 16px;       
-   -webkit-appearance: none;
-    -moz-appearance: none;
-}
-.select-wrap2:after {
-    content:"\f107";
-    font-family: FontAwesome;
-    font-size: 25px;
-    color: #2D3945;
-    padding: 20px 10px;
-    position: absolute; right: 0; top: 0;
-    z-index: 1;
-    text-align: center;
-    width: 10%;
-    height: 100%;      
+	content: "\f107";
+	font-family: FontAwesome;
+	font-size: 25px;
+	color: #2D3945;
+	padding: 21px 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	text-align: center;
+	width: 10%;
+	height: 100%;      
 }
 
 

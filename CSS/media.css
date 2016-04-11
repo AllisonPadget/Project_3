@@ -10,8 +10,6 @@
 
 @media  screen and (min-width: 760px) {
 
-
-
 	.container {
 		max-width: 650px;
 		margin: 0 auto;
@@ -52,13 +50,6 @@
 		width: 100%;
 	}
 
-
-	.clearfix:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-
 }
 
 
@@ -73,7 +64,6 @@
 *************************************/
 
 @media  screen and (min-width: 1024px) {
-
 
 	.container {
 		max-width: 975px;
@@ -103,12 +93,12 @@
 	
 	.col-sm {
 		float: left;
-		width: 38%;
+		width: 30%;
 	}
 
 	.col-lrg {
 		float: left;
-		width: 75%;
+		width: 70%;
 	}
 
 	/* centers text in middle of box using Flexbox */
@@ -155,15 +145,4 @@
 
 	}
 
-	.clearfix:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-
 }
-
-
-
-
-
