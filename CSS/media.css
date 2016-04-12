@@ -87,7 +87,7 @@
 	}
 
 	#zipcode {
-		max-width: 35%;
+		padding-left: 20px;
 	}
 
 	
@@ -120,7 +120,7 @@
 	input[type="radio"],
 	textarea {
 		margin: 0 auto;
-		padding: 15px 0;
+		padding: 15px 8px;
 	}
 
 
@@ -129,8 +129,9 @@
 		font-size: 1.2em;
 	}
 
-	h4 {
-		margin-left: 0;
+	#topics {
+		margin-left: 6px;
+		margin-top: 20px;
 	}
 
 	textarea {

@@ -3,7 +3,6 @@
 body {
 	margin: 0 auto;
 	font-family: "Roboto Slab", sans-serif;
-	/*font-family: "Merriweather", sans-serif;*/  /* mockup font */
 	background: #f2f2f3;
 }
 
@@ -171,7 +170,7 @@ textarea:focus {
 }
 
 #zipcode {
-	max-width: 180px;
+	max-width: 170px;
 	padding-left: 10px;
 	text-align: left;
 	font-size: 1em;
@@ -192,7 +191,6 @@ input::-webkit-input-placeholder {
 	color: #C3C7CA;
 	text-align: right;
 	font-style: italic;
-	/*font-size: 1.1em;*/
 	padding-right: 10px;
 }
  
@@ -258,14 +256,17 @@ h3 {
 	font-size: 1em;
 }
 
-h4 {
-	margin: 0 auto;
+.topics {
 	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 23px 0;
 	font-size: 1em;
 	font-weight: 300;
 	color: #55687A;
+	margin-left: 10px;
 }
+
+
 
 textarea {
 	background: #e4e4e7;
@@ -274,7 +275,9 @@ textarea {
 	width: 100%;
 	border-radius: 3px;
 	padding: 15px;
+	margin-top: 25px;
 	margin-bottom: 25px;
+	margin-left: 5px;
 }
 
 /***************** Fancy CHECKBOXES AND RADIO BUTTONS *****************/
@@ -366,6 +369,7 @@ button {
 	padding: 28px 0px;
 	min-width: 100%;
 	cursor: pointer;
+	margin-left: 5px;
 }
 
 button:hover {

@@ -5,7 +5,6 @@
   <title>Allison Padget | Online Registration Form Project 3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
-  <!-- <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,300,400italic' rel='stylesheet' type='text/css'> --> <!-- mockup font -->
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/media.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -158,18 +157,18 @@
             <label for="zipcode">Zip Code or Postal Code</label>
           </div>
           <div class="col-lrg">
-            <input type="text" id="zipcode" name="user_zipcode" placeholder="Ex: 12345/A1A 2B2">
+            <input type="text" id="zipcode" name="user_zipcode" placeholder="12345 or A1A 2B2">
           </div>
         </div>
 
       <div class="clearfix center">
         <div class="col-sm">
-          <label for="state">Preferred Language</label>
+          <label for="language">Preferred Language</label>
         </div>
         <div class="col-lrg">
           <span class="select-wrap">
             <select id="language" name="user_language">
-            <option value="choose" disabled hidden>Preferred Language</option>
+            <option value="" disabled hidden>Preferred Language</option>
               <optgroup label="Language"></optgroup>
                 <option selected value="english">English</option>
                 <option value="french">French</option>
@@ -243,8 +242,8 @@
             </label>
           </div>
 
-          <h4>Other topics you'd like to hear about</h4>
-          <textarea></textarea>
+          <label class="topics" for="topics">Other topics you'd like to hear about</label>
+          <textarea id="topics" name="user_topics"></textarea>
 
         <button type="submit">Sign Up</button>
     </fieldset>
